@@ -10,7 +10,6 @@ The workflow is designed to accept project-specific data at runtime. Public repo
 | --- | --- | --- | --- |
 | Building footprint layer | Source building geometry and attributes | `.gpkg` or `.shp` | `input_vector_path` |
 | Building layer name or index | Selects the layer inside a GeoPackage | string or integer | `input_vector_layer_name`, `input_vector_layer_index` |
-| EnergyPlus executable | Runs EnergyPlus simulations | `energyplus.exe` or platform equivalent | `energyplus.energyplus_exe` |
 | EnergyPlus IDD file | Defines the EnergyPlus object schema | `Energy+.idd` | `energyplus.idd_path` |
 | Mass-model template IDFs | Provide constructions and materials for generated mass models | `.idf` | `templates.mass_residential_idf`, `templates.mass_public_industrial_idf` |
 | Baseline template IDFs | Provide schedules, loads, output objects, and building-type assumptions | `.idf` | `templates.templates_dir` |
