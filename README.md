@@ -54,6 +54,8 @@ Copy the example configuration and update project-specific paths:
 
 - `examples/config.example.yaml` → `config.yaml`
 
+For project-specific GIS layers, IDF templates, EnergyPlus installations, and weather files, see `docs/INPUT_REQUIREMENTS.md`.
+
 Key fields include:
 
 - `project_root`: workflow root directory
