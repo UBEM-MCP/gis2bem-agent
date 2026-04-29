@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gis2bem-workflow"
+version = "0.1.0"
+description = "End-to-end climate-aware agentic workflow for GIS-to-EnergyPlus urban building energy modelling."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "GIS2BEM" }]
+dependencies = [
+  "fastmcp",
+  "flask",
+  "pandas",
+  "pyyaml",
+]
+
+[project.scripts]
+gis2bem-workflow-mcp = "gis2bem_workflow.server:main"
+gis2bem-workflow-api = "gis2bem_workflow.api:main"
+gis2bem-agent = "gis2bem_workflow.agent.react_agent:main"
+
+[project.optional-dependencies]
+gis = ["pyproj", "shapely", "geopandas", "lxml"]
+energyplus = ["eppy", "geomeppy"]
+excel = ["openpyxl"]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gis2bem_workflow*"]
+

@@ -1,0 +1,24 @@
+# Dependencies for the full workflow (install what you need per stage).
+
+# Base
+fastmcp
+flask
+pandas
+pyyaml
+
+# GIS / CRS
+pyproj
+shapely
+geopandas
+
+# Parsing / IO
+lxml
+openpyxl
+
+# EnergyPlus / IDF
+eppy
+geomeppy
+
+# GDAL / OGR (on Windows, often installed via conda: conda install -c conda-forge gdal)
+# gdal
+

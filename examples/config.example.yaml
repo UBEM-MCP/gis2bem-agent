@@ -1,0 +1,32 @@
+project_root: .
+city_name: Xia4men2shi4
+climate_zone: HSWWZ
+
+energyplus:
+  # EnergyPlus executable and IDD on your machine
+  energyplus_exe: ./EnergyPlusV23-2-0/energyplus.exe
+  idd_path: ./EnergyPlusV23-2-0/Energy+.idd
+
+templates:
+  # Runtime template paths. Provide your local or private template location.
+  templates_dir: ./gis2bem_workflow/assets/templates
+  mass_residential_idf: ./gis2bem_workflow/assets/templates/Template_Mass_Residential.idf
+  mass_public_industrial_idf: ./gis2bem_workflow/assets/templates/Template_Mass_Public&Industrial.idf
+
+# ---- Optional overrides (otherwise derived from project_root/city_name) ----
+
+# Example data is intentionally not bundled in this repo.
+# Provide your own vector file path (shp/gpkg) here.
+input_vector_path: ./path/to/your/buildings.gpkg
+input_vector_layer_name: xia4men2dao3__buildings_with_cells
+input_vector_layer_index: 0
+
+# Optional: if you already have the exported polygon CSV, set it here.
+buildings_csv_path: ./path/to/your/buildings.csv
+mass_idf_out_dir: ./Xia4men2shi4
+baseline_out_dir: ./Xia4men2shi4/Baseline
+idealload_out_dir: ./Xia4men2shi4/Idealload
+
+weather_dir: ./Xia4men2shi4_EPW
+sim_output_root: ./Xia4men2shi4/Idealload/SimResults
+

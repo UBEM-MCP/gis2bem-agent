@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local environments
+.env
+.venv/
+venv/
+
+# Local runtime outputs
+_tmp*/
+*.log
+
+# Private EnergyPlus template assets.
+# These files are required by the private runtime, but should not be published.
+gis2bem_workflow/assets/templates/*.idf
+gis2bem_workflow/assets/templates/*.idf.bak
+
+# Generated simulation/building outputs
+Xia4men2shi4/
+SmokeCity/
+SimResults/
+*.err
+*.eso
+*.eio
+*.mtr
+*.sql
+
