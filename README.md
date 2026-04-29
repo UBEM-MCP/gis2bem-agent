@@ -31,8 +31,8 @@ GIS2BEM Workflow Platform connects GIS building data with EnergyPlus model gener
 ### Installation
 
 ```bash
-git clone https://github.com/UBEM-MCP/<repository-name>.git
-cd <repository-name>
+git clone https://github.com/UBEM-MCP/gis2bem-agent.git
+cd gis2bem-agent
 pip install -e .
 ```
 
